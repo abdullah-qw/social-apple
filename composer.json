@@ -45,7 +45,7 @@
   "extra": {
     "name": "Social Apple",
     "handle": "social-apple",
-    "changelogUrl": "https://raw.githubusercontent.com/meerkats/social-linkedin/v3/CHANGELOG.md",
-    "downloadUrl": "https://github.com/meerkats/social-linkedin/archive/v3.zip"
+    "changelogUrl": "https://raw.githubusercontent.com/meerkats/social-apple/v3/CHANGELOG.md",
+    "downloadUrl": "https://github.com/meerkats/social-apple/archive/v3.zip"
   }
 }

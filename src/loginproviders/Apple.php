@@ -29,7 +29,7 @@ class Apple extends LoginProvider
      */
     public function getIconUrl()
     {
-        return Craft::$app->assetManager->getPublishedUrl('@dukt/social/linkedin/icon.svg', true);
+        return Craft::$app->assetManager->getPublishedUrl('@meerkats/social/apple/icon.svg', true);
     }
 
     /**
