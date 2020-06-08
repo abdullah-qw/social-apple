@@ -1,7 +1,7 @@
-LinkedIn login provider for Social
+Apple ID login provider for Social
 =======================
 
-This plugin provides a [LinkedIn](https://linkedin.com/) integration for [Social 2 for Craft CMS](https://github.com/dukt/social).
+This plugin provides a [Sign in with Apple](https://support.apple.com/en-us/HT210318) integration for [Social 2 for Craft CMS](https://github.com/dukt/social).
 
 
 ## Requirements
@@ -19,10 +19,10 @@ To install the plugin, follow these instructions.
 
 2. Then tell Composer to load the plugin:
 
-        composer require dukt/social-linkedin
+        composer require *******to complete*******
 
-3. In the Control Panel, go to Settings → Plugins and click the “Install” button for LinkedIn.
+3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Apple.
 
 ## Setup
 
-To enable the LinkedIn login provider, go to Social → Settings → Login Providers, and configure the “LinkedIn” login provider.
+To enable the Apple login provider, go to Social → Settings → Login Providers, and configure the Apple login provider.

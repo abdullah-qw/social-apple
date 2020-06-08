@@ -1,10 +1,10 @@
 {
-  "name": "dukt/social-linkedin",
-  "description": "LinkedIn integration for Social",
-  "version": "3.0.4",
+  "name": "meerkats/social-apple",
+  "description": "Apple integration for Social",
+  "version": "1.0.0",
   "type": "craft-plugin",
   "keywords": [
-    "linkedin",
+    "apple",
     "social",
     "craftcms"
   ],
@@ -13,23 +13,27 @@
     {
       "name": "Dukt",
       "homepage": "https://dukt.net/"
+    },
+    {
+      "name": "Meerkats",
+      "homepage": "https://www.meerkats.com.au/"
     }
   ],
   "support": {
-    "email": "support@dukt.net",
-    "issues": "https://github.com/dukt/social-linkedin/issues?state=open",
-    "source": "https://github.com/dukt/social-linkedin",
-    "docs": "https://github.com/dukt/social-linkedin",
-    "rss": "https://github.com/dukt/social-linkedin/commits/v3.atom"
+    "email": "techservices@meerkats.com.au",
+    "issues": "https://github.com/meerkats/social-apple/issues?state=open",
+    "source": "https://github.com/meerkats/social-apple",
+    "docs": "https://github.com/meerkats/social-apple",
+    "rss": "https://github.com/meerkats/social-apple/commits/v3.atom"
   },
   "require": {
-    "craftcms/cms": "^3.0.0-RC1", 
+    "craftcms/cms": "^3.0.0-RC1",
     "dukt/social": "^2.0.0-beta.10",
-    "league/oauth2-linkedin": "^5.1.0"
+    "patrickbussmann/oauth2-apple": "^0.2.1"
   },
   "autoload": {
     "psr-4": {
-      "dukt\\social\\linkedin\\": "src/"
+      "meerkats\\social\\linkedin\\": "src/"
     }
   },
   "repositories": [
@@ -39,9 +43,9 @@
     }
   ],
   "extra": {
-    "name": "Social LinkedIn",
-    "handle": "social-linkedin",
-    "changelogUrl": "https://raw.githubusercontent.com/dukt/social-linkedin/v3/CHANGELOG.md",
-    "downloadUrl": "https://github.com/dukt/social-linkedin/archive/v3.zip"
+    "name": "Social Apple",
+    "handle": "social-apple",
+    "changelogUrl": "https://raw.githubusercontent.com/meerkats/social-linkedin/v3/CHANGELOG.md",
+    "downloadUrl": "https://github.com/meerkats/social-linkedin/archive/v3.zip"
   }
 }

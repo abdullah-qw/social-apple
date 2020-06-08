@@ -1,5 +1,6 @@
 <?php
-namespace dukt\social\linkedin;
+
+namespace meerkats\social\apple;
 
 
 use Craft;
@@ -8,9 +9,9 @@ use yii\base\Event;
 
 
 /**
- * Plugin represents the LinkedIn integration plugin.
+ * Plugin represents the Login with Apple integration plugin.
  *
- * @author    Dukt <support@dukt.net>
+ * @author    Meerkats <techservices@meerkats.com.au>
  * @since     1.0
  */
 class Plugin extends \craft\base\Plugin
@@ -22,9 +23,9 @@ class Plugin extends \craft\base\Plugin
     {
         parent::init();
 
-        Event::on(LoginProviders::class, LoginProviders::EVENT_REGISTER_LOGIN_PROVIDER_TYPES, function($event) {
+        Event::on(LoginProviders::class, LoginProviders::EVENT_REGISTER_LOGIN_PROVIDER_TYPES, function ($event) {
             $loginProviderTypes = [
-                'dukt\social\linkedin\loginproviders\Linkedin'
+                'meerkats\social\apple\loginproviders\Apple'
             ];
 
             $event->loginProviderTypes = array_merge($event->loginProviderTypes, $loginProviderTypes);
