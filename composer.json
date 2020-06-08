@@ -33,7 +33,7 @@
   },
   "autoload": {
     "psr-4": {
-      "meerkats\\social\\linkedin\\": "src/"
+      "meerkats\\social\\apple\\": "src/"
     }
   },
   "repositories": [
