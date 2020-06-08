@@ -1,17 +1,17 @@
 <?php
 
-namespace dukt\social\linkedin\loginproviders;
+namespace meerkats\social\apple\loginproviders;
 
 use Craft;
 use dukt\social\base\LoginProvider;
 
 /**
- * Linkedin represents the Linkedin gateway
+ * Apple represents the Apple gateway
  *
  * @author    Dukt <support@dukt.net>
  * @since     1.0
  */
-class Linkedin extends LoginProvider
+class Apple extends LoginProvider
 {
     // Public Methods
     // =========================================================================
@@ -21,7 +21,7 @@ class Linkedin extends LoginProvider
      */
     public function getName(): string
     {
-        return 'LinkedIn';
+        return 'Apple';
     }
 
     /**
@@ -38,8 +38,8 @@ class Linkedin extends LoginProvider
     public function getDefaultOauthScope(): array
     {
         return [
-            'r_liteprofile',
-            'r_emailaddress'
+            'name',
+            'email'
         ];
     }
 
@@ -48,17 +48,17 @@ class Linkedin extends LoginProvider
      */
     public function getManagerUrl()
     {
-        return 'https://www.linkedin.com/developer/apps';
+        return 'https://appleid.apple.com/account/manage';
     }
 
     /**
      * @inheritdoc
      */
-    public function getOauthProvider(): \League\OAuth2\Client\Provider\LinkedIn
+    public function getOauthProvider(): \League\OAuth2\Client\Provider\Apple
     {
         $config = $this->getOauthProviderConfig();
 
-        return new \League\OAuth2\Client\Provider\LinkedIn($config['options']);
+        return new \League\OAuth2\Client\Provider\Apple($config['options']);
     }
 
     /**
@@ -74,6 +74,3 @@ class Linkedin extends LoginProvider
         ];
     }
 }
-
-
-
