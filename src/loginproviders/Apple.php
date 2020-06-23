@@ -48,7 +48,7 @@ class Apple extends LoginProvider
      */
     public function getManagerUrl()
     {
-        return 'https://appleid.apple.com/account/manage';
+        return 'https://developer.apple.com/account/resources';
     }
 
     /**
