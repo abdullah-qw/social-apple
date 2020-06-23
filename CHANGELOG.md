@@ -1,6 +1,9 @@
 Changelog
 =========
 
+## 1.0.2 - 2020-06-23
+- Updated management url
+
 ## 1.0.1 - 2020-06-23
 
 ### Added
