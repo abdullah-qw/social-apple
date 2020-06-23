@@ -1,6 +1,9 @@
 Changelog
 =========
 
+## 1.0.3 - 2020-06-23
+- Added ignore CSRF protection
+
 ## 1.0.2 - 2020-06-23
 - Updated management url
 
