@@ -37,7 +37,7 @@ use craft\web\Response;
  * @package   SocialApple
  * @since     1.0.0.
  */
-class SocialAppleController extends Controller
+class CallbackController extends Controller
 {
 
     // Protected Properties
@@ -48,7 +48,7 @@ class SocialAppleController extends Controller
      *         The actions must be in 'kebab-case'
      * @access protected
      */
-    protected $allowAnonymous = ['callback'];
+    protected $allowAnonymous = ['index'];
 
     // Public Methods
     // =========================================================================
@@ -59,7 +59,7 @@ class SocialAppleController extends Controller
      * @return Response
      * @throws \craft\errors\MissingComponentException
      */
-    public function actionCallback(): Response
+    public function actionIndex(): Response
     {
         Craft::$app->getSession()->set('social.callback', true);
 
