@@ -40,6 +40,15 @@ use craft\web\Response;
 class CallbackController extends Controller
 {
 
+    // Public Properties
+    // =========================================================================
+
+    /**
+     * @var    bool Allows access to this controller's actions without CSRF validation.
+     * @access public
+     */
+    public $enableCsrfValidation = false;
+
     // Protected Properties
     // =========================================================================
 
