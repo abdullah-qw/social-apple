@@ -27,7 +27,9 @@ To install the plugin, follow these instructions.
 
 To enable the Apple login provider, go to Social → Settings → Login Providers, and configure the Apple login provider.
 
-Set up your social:
+Set up your 'Sign in with Apple ID' within the developer console. Download the keyfile to your code base.
+
+Set up your social.php:
 
 'redirectUri'       => 'http://ohapple.lol:3080/index.php?p=actions/social-apple/callback',
 ```php
@@ -37,10 +39,6 @@ return array(
       'userFieldMapping' => [
         'firstName' => '{{ profile.getFirstName }}',
         'lastName' => '{{ profile.getLastName }}',
-        'dateOfBirth' => '{{ profile.toArray().birthday }}',
-      ],
-      'profileFields' => [
-        'birthday', 'hometown'
       ],
       'oauth' => [
         'options' => [
@@ -55,3 +53,14 @@ return array(
   ]
 );
 ```
+
+Within the Social Login Providers for Apple, ignore the redirect URI (it's set in the social.php) and the client secret (it's not needed, due to the keyfile).
+
+
+## Limitations
+
+Apple only appears to allow full name and email.
+
+## Fields
+
+Documentation on actual fields is TBC.
